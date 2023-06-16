@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "Up-Wrk",
+  "version": "1.0",
+  "description": "Fills out data into the form",
+  "icons": {
+    "48": "icons/logo.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.myworkdayjobs.com/*"
+      ],
+      "js": [
+        "script.js",
+        "utils.js",
+        "actions/about-company.action.js",
+        "actions/name.action.js",
+        "actions/address.action.js",
+        "actions/email.action.js",
+        "actions/phone.action.js",
+        "actions/work-experience-action.js",
+        "actions/education.action.js",
+        "actions/skills.action.js",
+        "actions/resume.action.js",
+        "actions/social.action.js",
+        "actions/application.action.js",
+        "actions/disclosures.action.js",
+        "actions/identify.action.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "clipboardWrite",
+    "tabs"
+  ]
+}
